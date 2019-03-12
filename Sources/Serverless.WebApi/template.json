@@ -9,6 +9,12 @@
 				"Handler": "Serverless.WebApi::Serverless.WebApi.LambdaEntryPoint::FunctionHandlerAsync",
 				"Runtime": "dotnetcore2.1",
 				"CodeUri": "",
+				"MemorySize": 128,
+				"Timeout": 30,
+				"Role": null,
+				"Policies": [
+					"AWSLambdaBasicExecutionRole"
+				],
 				"Events": {
 					"ProxyResource": {
 						"Type": "Api",
