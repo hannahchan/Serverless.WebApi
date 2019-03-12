@@ -38,12 +38,8 @@
                     Scheme = this.HttpContext.Request.Scheme,
                     Host = this.HttpContext.Request.Host.ToString(),
                     Path = this.HttpContext.Request.Path.ToString(),
-
                     Headers = this.HttpContext.Request.Headers
                         .ToDictionary(header => header.Key, header => header.Value.ToString()),
-
-                    Form = this.HttpContext.Request.HasFormContentType ?
-                        this.HttpContext.Request.Form.ToDictionary(form => form.Key, form => form.Value.ToString()) : null,
                 }
             };
         }
