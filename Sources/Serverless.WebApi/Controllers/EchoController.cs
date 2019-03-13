@@ -29,7 +29,7 @@
                 HttpConnection = new
                 {
                     RemoteIpAddress = this.HttpContext.Connection.RemoteIpAddress.ToString(),
-                    LocalIpAddress = this.HttpContext.Connection.LocalIpAddress.ToString()
+                    LocalIpAddress = this.HttpContext.Connection.LocalIpAddress?.ToString()
                 },
 
                 HttpRequest = new
