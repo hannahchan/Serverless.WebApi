@@ -23,7 +23,6 @@ namespace Serverless.WebApi.Middleware
                 httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
                 await httpContext.Response.WriteAsync(exception.ToString());
-                return;
             }
         }
     }
