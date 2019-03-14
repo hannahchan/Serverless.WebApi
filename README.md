@@ -10,7 +10,7 @@ Serverless.WebApi is an experiment in deploying an ASP.NET Core WebApi as a serv
 
 ## How does this work? ##
 
-In short a nuget package, `Amazon.Lambda.AspNetCoreServer` is installed in the WebApi project and a separate application entry point using this package, [*LambdaEntryPoint.cs*](Sources/Serverless.WebApi/LambdaEntryPoint.cs) is created for AWS Lambda. AWS Lambda uses this entry point to your application instead of the conventional [*Program.cs*](Sources/Serverless.WebApi/Program.cs). The WebApi is configured and deployed as a serverless application by using a AWS Serverless Application Model (SAM) [template](Sources/Serverless.WebApi/template.json).
+In short, a nuget package, `Amazon.Lambda.AspNetCoreServer` is installed in the WebApi project and a separate application entry point using this package, [*LambdaEntryPoint.cs*](Sources/Serverless.WebApi/LambdaEntryPoint.cs) is created for AWS Lambda. AWS Lambda uses this entry point to your application instead of the conventional [*Program.cs*](Sources/Serverless.WebApi/Program.cs). The WebApi is configured and deployed as a serverless application by using a AWS Serverless Application Model (SAM) [template](Sources/Serverless.WebApi/template.json).
 
 ## Deploying the WebApi as a Serverless Application ##
 
