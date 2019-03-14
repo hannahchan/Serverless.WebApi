@@ -1,9 +1,10 @@
 ﻿{
     "profile":"",
     "region" : "",
+    "stack-name": "",
+    "s3-bucket": "",
     "configuration": "Release",
     "framework": "netcoreapp2.1",
-    "s3-prefix": "",
     "template": "template.json",
     "template-parameters": ""
 }
