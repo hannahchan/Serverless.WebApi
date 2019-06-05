@@ -21,26 +21,26 @@
             {
                 Environment = new
                 {
-                    MachineName = Environment.MachineName,
+                    Environment.MachineName,
                     OSVersion = Environment.OSVersion.ToString(),
-                    ProcessorCount = Environment.ProcessorCount
+                    Environment.ProcessorCount,
                 },
 
                 HttpConnection = new
                 {
                     RemoteIpAddress = this.HttpContext.Connection.RemoteIpAddress.ToString(),
-                    LocalIpAddress = this.HttpContext.Connection.LocalIpAddress?.ToString()
+                    LocalIpAddress = this.HttpContext.Connection.LocalIpAddress?.ToString(),
                 },
 
                 HttpRequest = new
                 {
-                    Method = this.HttpContext.Request.Method,
-                    Scheme = this.HttpContext.Request.Scheme,
+                    this.HttpContext.Request.Method,
+                    this.HttpContext.Request.Scheme,
                     Host = this.HttpContext.Request.Host.ToString(),
                     Path = this.HttpContext.Request.Path.ToString(),
                     Headers = this.HttpContext.Request.Headers
                         .ToDictionary(header => header.Key, header => header.Value.ToString()),
-                }
+                },
             };
         }
     }
