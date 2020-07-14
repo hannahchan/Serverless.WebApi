@@ -9,7 +9,10 @@ namespace Serverless.WebApi.Middleware
     {
         private readonly RequestDelegate next;
 
-        public UnhandledExceptionMiddleware(RequestDelegate next) => this.next = next;
+        public UnhandledExceptionMiddleware(RequestDelegate next)
+        {
+            this.next = next;
+        }
 
         public async Task Invoke(HttpContext httpContext)
         {

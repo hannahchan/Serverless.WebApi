@@ -4,7 +4,7 @@
     "stack-name": "",
     "s3-bucket": "",
     "configuration": "Release",
-    "framework": "netcoreapp2.1",
+    "framework": "netcoreapp3.1",
     "template": "template.json",
     "template-parameters": ""
 }
